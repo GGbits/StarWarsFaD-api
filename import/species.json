@@ -1,0 +1,186 @@
+[
+  {
+    "id": "0a562196-a0cb-4435-b2f3-6c35ef572f7b",
+    "name": "Cerean",
+    "characteristics":
+    {
+      "brawn": 2,
+      "agility": 1,
+      "intellect": 3,
+      "cunning": 2,
+      "willpower": 2,
+      "presence": 2
+    },
+    "special": "Cereans begin the game with one rank in Vigilance. They still may not train Vigilance above rank 2 during character creation.",
+    "talents":
+    [
+      {
+        "title": "Binary Processing",
+        "description": "Cereans treat all Knowledge skills as career skills"
+      }
+    ],
+    "xp": 90,
+    "wound": [10, 0],
+    "strain": [13, 5]
+  },
+  {
+    "id": "cf0af067-77e7-4685-bcf3-8d2821e10ade",
+    "name": "Human",
+    "characteristics":
+    {
+      "brawn": 2,
+      "agility": 2,
+      "intellect": 2,
+      "cunning": 2,
+      "willpower": 2,
+      "presence": 2
+    },
+    "special": "Humans start the game with one rank in two different non-career skills of their choice. They still may not train these skills above rank 2 at character creation.",
+    "talents": [],
+    "xp": 110,
+    "wound": [10, 0],
+    "strain": [10, 5]
+  },
+  {
+    "id": "bce63d44-9837-454c-964d-bcb2544ed910",
+    "name": "Kel Dor",
+    "characteristics":
+    {
+      "brawn": 1,
+      "agility": 2,
+      "intellect": 2,
+      "cunning": 2,
+      "willpower": 3,
+      "presence": 2
+    },
+    "special": "Kel Dors begin the game with one rank in Knowledge (Education). They may not train Knowledge (Education) above rank 2 during character creation.",
+    "talents":
+    [
+      {
+        "title": "Dark Vision",
+        "description": "When making skill checks, Kel Dors remove up to <setback_die><setback_die> imposed due to darkness"
+      },
+      {
+        "title": "Atmospheric Requirement",
+        "description": "Kel Dors must wear a specialized mask to breathe and see outside of their native atmosphere. A Kel Dor character starts the game with an antitox breath mask and treats oxygen as a dangerous atmosphere with Rating 8 (see page 220}. However, Kel Dors may survive in vacuum for up to five minutes before suffering its effects"
+      }
+    ],
+    "xp": 100,
+    "wound": [10, 0],
+    "strain": [10, 5]
+  },
+  {
+    "id": "c5e98ca1-0c6e-4ab0-a783-2f554827cb46",
+    "name": "Mirialan",
+    "characteristics":
+    {
+      "brawn": 2,
+      "agility": 3,
+      "intellect": 2,
+      "cunning": 1,
+      "willpower": 2,
+      "presence": 2
+    },
+    "special": "Mirialans begin the game with one rank in Discipline. They still may not train Discipline above rank 2 during character creation.",
+    "talents": [],
+    "xp": 100,
+    "wound": [11, 0],
+    "strain": [10, 5]
+  },
+  {
+    "id": "c2f00c50-39e4-4648-9f53-3af2b31833f9",
+    "name": "Nautolan",
+    "characteristics":
+    {
+      "brawn": 3,
+      "agility": 2,
+      "intellect": 2,
+      "cunning": 2,
+      "willpower": 1,
+      "presence": 2
+    },
+    "special": "Nautolans begin the game with one rank in Athletics. They still may not train Athletics above rank 2 during character creation.",
+    "talents":
+    [
+      {
+        "title": "Amphibious",
+        "description": "Nautolans may breath underwater without penalty and never suffer movement penalties for travelling through water"
+      }
+    ],
+    "xp": 100,
+    "wound": [11, 0],
+    "strain": [9, 5]
+  },
+  {
+    "id": "28912ef8-3871-463f-a3c6-e4969c22b508",
+    "name": "Togruta",
+    "characteristics":
+    {
+      "brawn": 1,
+      "agility": 2,
+      "intellect": 2,
+      "cunning": 3,
+      "willpower": 2,
+      "presence": 2
+    },
+    "special": "Togruta begin the game with one rank in Perception. They still may not train Perception above rank 2 during character creation.",
+    "talents":
+    [
+      {
+        "title": "Pack Instincts",
+        "description": "When performing the assist maneuver, Togrutas grant <boost_die><boost_die> instead of <boost_die>"
+      }
+    ],
+    "xp": 100,
+    "wound": [10, 0],
+    "strain": [10, 5]
+  },
+  {
+    "id": "0885224e-0972-4fa0-8037-7aca97c25f9a",
+    "name": "Twi'lek",
+    "characteristics":
+    {
+      "brawn": 1,
+      "agility": 2,
+      "intellect": 2,
+      "cunning": 2,
+      "willpower": 2,
+      "presence": 3
+    },
+    "special": "Twi'lek begin the game with one rank in Charm of Deception. They still may not train Charm or Deception above rank 2 during character creation.",
+    "talents":
+    [
+      {
+        "title": "Desert Dwellers",
+        "description": "When making skill checks Twi'lek may remove <setback_die> imposed due to arid or hot environmetal conditions."
+      }
+    ],
+    "xp": 100,
+    "wound": [10, 0],
+    "strain": [11, 5]
+  },
+  {
+    "id": "456b4526-07d0-4a0b-9722-03699cbb3f8e",
+    "name": "Zabrak",
+    "characteristics":
+    {
+      "brawn": 2,
+      "agility": 2,
+      "intellect": 2,
+      "cunning": 2,
+      "willpower": 1,
+      "presence": 3
+    },
+    "special": "Zabrak begin the game with one rank in Survival. They still may not train Survival above rank 2 during character creation.",
+    "talents":
+    [
+      {
+        "title": "Fearsome Countenance",
+        "description": "Zabrak add automatic <advantage> to all Coercion checks they make."
+      }
+    ],
+    "xp": 100,
+    "wound": [10, 0],
+    "strain": [10, 5]
+  }
+]

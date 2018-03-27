@@ -1,42 +1,34 @@
-import csv
-import uuid
+import json
 from mongoengine import *
 from settings import DBNAME
-from Species import *
+from Species import Species, Talent
+from Characteristics import Characteristics
 
 connect(DBNAME)
 
 
 # TODO: create another csv for species talents, import that first, then using the name, relate talents to species
 def import_species(file):
-    with open(file) as f:
-        data =[tuple(line) for line in csv.reader(f)]
-
-    tuple_list = []
-    for tup in data:
-        tuple_list.append(Species(
-            id=uuid.uuid4(),
-            name=tup[0],
+    species_json = json.load(open(file))
+    for s in species_json:
+        species_object = Species(
+            name=s['name'],
             characteristics=Characteristics(
-                brawn=tup[1],
-                agility=tup[2],
-                intellect=tup[3],
-                cunning=tup[4],
-                willpower=tup[5],
-                presnce=tup[6]
-                ),
-            special=tup[7],
-            talents=Talent(
-                title=tup[8],
-                description=tup[9]
-                ),
-            xp=tup[10],
-            wound=tup[11],
-            strain=tup[12]
-            ))
-
-    for species in tuple_list:
-        species.save()
+                brawn=s['characteristics']['brawn'],
+                agility=s['characteristics']['agility'],
+                intellect=s['characteristics']['intellect'],
+                cunning=s['characteristics']['cunning'],
+                willpower=s['characteristics']['willpower'],
+                presence=s['characteristics']['presence']
+            ),
+            special=s['special'],
+            talents=[Talent(title=t['title'], description=t['description']) for t in s['talents']],
+            xp=s['xp'],
+            wound=s['wound'],
+            strain=s['strain']
+        )
+        species_object.save()
 
 
-import_species("import/species.csv")
+if __name__ == '__main__':
+    import_species("import/species.json")

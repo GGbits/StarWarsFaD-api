@@ -1,5 +1,5 @@
 from mongoengine import *
-from Characteristics import *
+from Characteristics import Characteristics
 
 
 class Talent(EmbeddedDocument):
@@ -8,9 +8,8 @@ class Talent(EmbeddedDocument):
 
 
 class Species(Document):
-    id = UUIDField
-    name = StringField()
-    characteristics = EmbeddedDocument(Characteristics)
+    name = StringField(unique=True)
+    characteristics = EmbeddedDocumentField(Characteristics)
     special = StringField()
     talents = EmbeddedDocumentListField(Talent)
     xp = IntField()

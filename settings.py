@@ -1,1 +1,1 @@
-DBNAME = "sw_api"
+DBNAME = "swapi"
